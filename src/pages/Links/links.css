@@ -1,0 +1,10 @@
+.links-container {
+    max-width: 1125px;
+    margin: 32px auto 0 auto;
+}
+
+.links-header{
+    display: flex;
+    flex-direction: row;
+
+}

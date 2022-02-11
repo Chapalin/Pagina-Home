@@ -1,0 +1,123 @@
+.container-home{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+/* animação subindo area do logo*/
+@keyframes slideYY{
+    from {
+        transform: translateY(-90px)
+    }
+    to {
+        transform: translateX(0px) 
+    }
+}
+
+.logo{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    animation:slideYY 2s;
+    
+}
+
+
+
+.logo h1{
+    font-size: 60px;
+    color: #fff;
+    
+}
+
+.logo span {
+    color: #fff;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+    
+}
+
+
+
+.area-input{
+    width:540px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    animation:slideY 2s;
+}
+/* animação subindo area input*/
+@keyframes slideY{
+    from {
+        transform: translateY(90px)
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+.area-input div{
+     width:100%;
+    height:46px;
+    background-color:rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+
+.area-input input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    height: 46px;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+}
+
+.area-input input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+.area-input button{
+    width: 100%;
+    height:46px;
+    border-radius: 4px;
+    margin-top: 8px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    transition: transform 0.8s;
+}
+
+
+@media (max-width:584px) {
+    .logo img {
+        width: 95px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .area-input {
+        width:85%;
+    }
+}
+
+.area-input button:hover{
+    transform:scale(1.03) ;
+}
